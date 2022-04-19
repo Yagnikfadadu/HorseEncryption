@@ -77,7 +77,7 @@ public class PerformMorse
 
     static ArrayList<String> getString(String s1)
     {
-        String[] strings = s1.split("`");
+        String[] strings = s1.split("~");
         ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(strings));
         ArrayList<String> processedList = new ArrayList<>();
         String[] m1 = new String[arrayList.size()];

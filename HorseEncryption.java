@@ -22,12 +22,12 @@ public class HorseEncryption
         ArrayList<String> iteration3 = PerformMorse.getMorse(encryption2);
         for (String s: iteration3)
         {
-            encryption3 +=s+"`";
+            encryption3 +=s+"~";
         }
-
+        System.out.print("Encrypted Text: ");
         return encryption3;
-
     }
+
     String decrypt(String s1)
     {
         String decryption1 = "";
@@ -50,16 +50,8 @@ public class HorseEncryption
         {
             decryption3 +=s;
         }
-
+        System.out.print("Decrypted Text: ");
         return decryption3;
-    }
-
-    public static void main(String[] args) {
-        HorseEncryption he = new HorseEncryption();
-        String enc = he.encrypt("yagnik");
-        System.out.println(enc);
-        String dec = he.decrypt(enc);
-        System.out.println(dec);
     }
 
 }
