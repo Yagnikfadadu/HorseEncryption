@@ -1,3 +1,5 @@
+package HorseEncryption;
+
 import java.util.ArrayList;
 
 public class PerformDoubleEncryption {
@@ -12,7 +14,12 @@ public class PerformDoubleEncryption {
             if(String.valueOf(string.charAt(i)).equals(" ") || String.valueOf(string.charAt(i)).equals(".") ||
                     String.valueOf(string.charAt(i)).equals(",") || String.valueOf(string.charAt(i)).equals("!") ||
                     String.valueOf(string.charAt(i)).equals("@") || String.valueOf(string.charAt(i)).equals("&") ||
-                    String.valueOf(string.charAt(i)).equals("'") || String.valueOf(string.charAt(i)).equals("\""))
+                    String.valueOf(string.charAt(i)).equals("'") || String.valueOf(string.charAt(i)).equals("\"") ||
+                    String.valueOf(string.charAt(i)).equals("0") || String.valueOf(string.charAt(i)).equals("1") ||
+                    String.valueOf(string.charAt(i)).equals("2") || String.valueOf(string.charAt(i)).equals("3") ||
+                    String.valueOf(string.charAt(i)).equals("4") || String.valueOf(string.charAt(i)).equals("5") ||
+                    String.valueOf(string.charAt(i)).equals("6") || String.valueOf(string.charAt(i)).equals("7") ||
+                    String.valueOf(string.charAt(i)).equals("8") || String.valueOf(string.charAt(i)).equals("9"))
             {
                 cipherText.add(String.valueOf(string.charAt(i)));
             }
