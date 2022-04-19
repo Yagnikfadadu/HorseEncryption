@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class HorseEncryption
 {
-    ArrayList<String> encrypt(String userInput)
+    String encrypt(String userInput)
     {
         String encryption1= "";
         ArrayList<String> iteration1 = PerformEncryption.Iteration(userInput);
@@ -23,16 +22,16 @@ public class HorseEncryption
         ArrayList<String> iteration3 = PerformMorse.getMorse(encryption2);
         for (String s: iteration3)
         {
-            encryption3 +=s;
+            encryption3 +=s+"`";
         }
 
-        return iteration3;
+        return encryption3;
 
     }
-    String decrypt(ArrayList<String> iteration3)
+    String decrypt(String s1)
     {
         String decryption1 = "";
-        ArrayList<String> iteration4 = PerformMorse.getString(iteration3);
+        ArrayList<String> iteration4 = PerformMorse.getString(s1);
         for (String s: iteration4)
         {
             decryption1 +=s;
@@ -57,7 +56,7 @@ public class HorseEncryption
 
     public static void main(String[] args) {
         HorseEncryption he = new HorseEncryption();
-        ArrayList<String> enc =he.encrypt("Yagnik fadadu and meet shah");
+        String enc = he.encrypt("yagnik");
         System.out.println(enc);
         String dec = he.decrypt(enc);
         System.out.println(dec);
