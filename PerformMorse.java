@@ -75,14 +75,11 @@ public class PerformMorse
         return processedList;
     }
 
-    static ArrayList<String> getString(ArrayList<String> arrayList)
+    static ArrayList<String> getString(String s1)
     {
+        String[] strings = s1.split("`");
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(strings));
         ArrayList<String> processedList = new ArrayList<>();
-//        char[] USS = new char[s1.length()];
-//        for (int i=0;i<s1.length();i++)
-//        {
-//            USS[i] = s1.charAt(i);
-//        }
         String[] m1 = new String[arrayList.size()];
         for (int i=0;i<arrayList.size();i++)
         {
@@ -200,63 +197,6 @@ public class PerformMorse
                 processedList.add(s);
             }
         }
-
-//        for (char uss : USS) {
-//            if (uss == 'a' || uss == 'A') {
-//                processedList.add("10");
-//            } else if (uss == 'b' || uss == 'B') {
-//                processedList.add("0111");
-//            } else if (uss == 'c' || uss == 'C') {
-//                processedList.add("0101");
-//            } else if (uss == 'd' || uss == 'D') {
-//                processedList.add("011");
-//            } else if (uss == 'e' || uss == 'E') {
-//                processedList.add("1");
-//            } else if (uss == 'f' || uss == 'F') {
-//                processedList.add("1101");
-//            } else if (uss == 'g' || uss == 'G') {
-//                processedList.add("001");
-//            } else if (uss == 'h' || uss == 'H') {
-//                processedList.add("1111");
-//            } else if (uss == 'i' || uss == 'I') {
-//                processedList.add("11");
-//            } else if (uss == 'j' || uss == 'J') {
-//                processedList.add("1000");
-//            } else if (uss == 'k' || uss == 'K') {
-//                processedList.add("010");
-//            } else if (uss == 'l' || uss == 'L') {
-//                processedList.add("1011");
-//            } else if (uss == 'm' || uss == 'M') {
-//                processedList.add("00");
-//            } else if (uss == 'n' || uss == 'N') {
-//                processedList.add("01");
-//            } else if (uss == 'o' || uss == 'O') {
-//                processedList.add("000");
-//            } else if (uss == 'p' || uss == 'P') {
-//                processedList.add("1001");
-//            } else if (uss == 'q' || uss == 'Q') {
-//                processedList.add("0010");
-//            } else if (uss == 'r' || uss == 'R') {
-//                processedList.add("101");
-//            } else if (uss == 's' || uss == 'S') {
-//                processedList.add("111");
-//            } else if (uss == 't' || uss == 'T') {
-//                processedList.add("0");
-//            } else if (uss == 'u' || uss == 'U') {
-//                processedList.add("110");
-//            } else if (uss == 'v' || uss == 'V') {
-//                processedList.add("1110");
-//            } else if (uss == 'w' || uss == 'W') {
-//                processedList.add("100");
-//            } else if (uss == 'x' || uss == 'X') {
-//                processedList.add("0110");
-//            } else if (uss == 'y' || uss == 'Y') {
-//                processedList.add("0100");
-//            } else if (uss == 'z' || uss == 'Z') {
-//                processedList.add("0011");
-//            }
-//        }
-
         return processedList;
     }
 }
