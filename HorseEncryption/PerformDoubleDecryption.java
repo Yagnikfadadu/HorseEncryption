@@ -13,6 +13,7 @@ public class PerformDoubleDecryption {
 
         for (int i = 0; i < string.length(); i++) {
             if (String.valueOf(string.charAt(i)).equals(" ") || String.valueOf(string.charAt(i)).equals(".") ||
+                    String.valueOf(string.charAt(i)).equals("-") || String.valueOf(string.charAt(i)).equals(":") ||
                     String.valueOf(string.charAt(i)).equals(",") || String.valueOf(string.charAt(i)).equals("!") ||
                     String.valueOf(string.charAt(i)).equals("@") || String.valueOf(string.charAt(i)).equals("&") ||
                     String.valueOf(string.charAt(i)).equals("'") || String.valueOf(string.charAt(i)).equals("\"") ||
