@@ -12,16 +12,7 @@ public class PerformDoubleDecryption {
         ArrayList<String> plainText = new ArrayList<>();
 
         for (int i = 0; i < string.length(); i++) {
-            if (String.valueOf(string.charAt(i)).equals(" ") || String.valueOf(string.charAt(i)).equals(".") ||
-                    String.valueOf(string.charAt(i)).equals("-") || String.valueOf(string.charAt(i)).equals(":") ||
-                    String.valueOf(string.charAt(i)).equals(",") || String.valueOf(string.charAt(i)).equals("!") ||
-                    String.valueOf(string.charAt(i)).equals("@") || String.valueOf(string.charAt(i)).equals("&") ||
-                    String.valueOf(string.charAt(i)).equals("'") || String.valueOf(string.charAt(i)).equals("\"") ||
-                    String.valueOf(string.charAt(i)).equals("0") || String.valueOf(string.charAt(i)).equals("1") ||
-                    String.valueOf(string.charAt(i)).equals("2") || String.valueOf(string.charAt(i)).equals("3") ||
-                    String.valueOf(string.charAt(i)).equals("4") || String.valueOf(string.charAt(i)).equals("5") ||
-                    String.valueOf(string.charAt(i)).equals("6") || String.valueOf(string.charAt(i)).equals("7") ||
-                    String.valueOf(string.charAt(i)).equals("8") || String.valueOf(string.charAt(i)).equals("9"))
+            if(String.valueOf(string.charAt(i)).matches("[\\d\\s.\\-:,=_`~!@&'\"+*/#$%^(){}\\[\\]]"))
             {
                 plainText.add(String.valueOf(string.charAt(i)));
             }
