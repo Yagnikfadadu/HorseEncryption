@@ -12,7 +12,7 @@ public class PerformDoubleDecryption {
         ArrayList<String> plainText = new ArrayList<>();
 
         for (int i = 0; i < string.length(); i++) {
-            if(String.valueOf(string.charAt(i)).matches("[\\d\\s.\\-:,=_`~!@&'\"+*/#$%^(){}\\[\\]]"))
+            if(String.valueOf(string.charAt(i)).matches("[\\d\\s.\\-:,;=_`~!@&'\"+*/#$%^(){}\\[\\]]"))
             {
                 plainText.add(String.valueOf(string.charAt(i)));
             }

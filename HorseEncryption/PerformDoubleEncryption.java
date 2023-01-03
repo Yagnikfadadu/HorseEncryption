@@ -11,7 +11,7 @@ public class PerformDoubleEncryption {
 
         for (int i = 0; i < string.length(); i++)
         {
-            if(String.valueOf(string.charAt(i)).matches("[\\d\\s.\\-:,=_`~!@&'\"+*/#$%^(){}\\[\\]]"))
+            if(String.valueOf(string.charAt(i)).matches("[\\d\\s.\\-:,=_;`~!@&'\"+*/#$%^(){}\\[\\]]"))
             {
                 cipherText.add(String.valueOf(string.charAt(i)));
             }
