@@ -1,8 +1,8 @@
 # HorseEncryption
-This package was developed to solve to major problem of data theft from servers. It encrypts the data to _unintelligible_ form which cannot be read without _decrypting_.
+This package was developed to solve to major problem of data theft from servers. It encrypts the data to _unintelligible_ form which cannot be read without _decrypting_ the text.
 
 The package is still in development phase and for now it supports alphanumeric characters and basic symbols.
-For Future Enhancements we are planning to add support for encrypting a text file and vice versa.
+We also added feature for encryption and decryption of a text file.
 
 # How to use this package?
 1. Clone the repository or download the ZIP file and extract in a folder.
